@@ -1,8 +1,11 @@
 <template>
   <div class="hero has-background-black is-fullheight">
-    <Header class="hero-head is-flex is-align-items-center mt-3 ml-3">
-      <img src="../assets/Logo_analytics.png" alt="Logo da Analytics" />
-      <div class="container is-flex is-justify-content-space-between">
+    <!-- Inicio da Navbar -->
+    <div class="hero-head is-flex is-align-items-center mx-4 mb-2">
+      <div class="tile is-parent is-2">
+        <img src="../assets/Logo_analytics.png" alt="Logo da Analytics" />
+      </div>
+      <div class="tile is-parent is-10 is-flex is-justify-content-space-between">
         <b-field>
           <b-input
             placeholder="Buscar Funcionalidades"
@@ -13,12 +16,27 @@
           </b-input>
         </b-field>
 
-        <p class="has-text-grey-light has-text-weight-bold mr-6 mt-2">Super Admin</p>
+        <p class="has-text-white mr-6 mt-2">Super Admin</p>
       </div>
-    </Header>
+    </div>
+    <!-- Fim da Navbar -->
+    
+    <!-- Fim da Faixa -->
+    <section class="mx-4">
+      <div class="tile is-parent">
+        <div class="tile is-child is-2"></div>
+        <div class=" tile is-child is-10 is-flex is-justify-content-space-between">
+          <h1 class="has-text-grey-light is-size-3 has-text-weight-bold"> Usuários com acesso a plataforma</h1>
+          <b-button type="is-success"> <router-link class="has-text-white" to="/cadastro"> Novos Usuários</router-link> </b-button>
+        </div>
+      </div>
+    </section>
+    <!-- Fim da Faixa -->
+    
+    <!-- Inicio SideBar e Container Usuários -->
 
-    <div class="tile mx-5">
-      <div class="tile  mb-2 mt-6 is-parent is-2 has-background-dark">
+    <div class="tile mx-4 mb-2">
+      <div class="tile  mb-2 is-parent is-2">
         <article class="tile is-child">
           <div class="content is-flex is-flex-direction-column">
             <div class=" is-flex is-align-items-center">
@@ -45,16 +63,10 @@
         </article>
       </div>
 
-      <div class="tile is-parent is-10">
+      <div class="tile is-parent is-10 p-0">
         <article class="tile is-child">
-          <div class="content">
-            
-            <div class="is-flex is-justify-content-space-between is-align-items-center mb-4">
-              <h1 class="has-text-grey-light has-text-weight-bold"> Usuários com acesso a plataforma</h1>
-              <b-button type="is-success"> <router-link class="has-text-white" to="/cadastro"> Novos Usuários</router-link> </b-button>
-            </div>
-            
-            <div class="container p-2 has-background-dark">
+          <div class="content is-flex is-flex-direction-column">
+            <div class="p-4 ml-3 has-background-dark">
               <Header class="is-flex is-justify-content-space-between">
                 <div class="is-flex is-align-items-center">
                   <img class="m-2" src="../assets/Filter.png" alt="">
@@ -62,7 +74,6 @@
                   <img class="m-3" src="../assets/Line.png" alt="">
                   <span class="has-text-grey-light"> ordenar por </span>
                 </div>
-              
                 <div class="buttons has-addons">
                   <button class="button is-black is-selected">Yes</button>
                   <button class="button is-black has-background-black-bis">Maybe</button>
@@ -75,22 +86,19 @@
                 <p class="has-text-grey-light">Usuários</p>
                 <hr class="hr has-background-grey">
                 </div>
-                
               </main>
-
             </div>
-            
-            
           </div>
         </article>
       </div>
 
     </div>
+    <!-- Fim SideBar e Container Usuários -->
   </div>
 </template>
 <script>
 export default {
-  name: 'Hero',
+  name: 'User',
   props: {
     
   }
