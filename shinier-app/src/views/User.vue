@@ -51,7 +51,7 @@
             
             <div class="is-flex is-justify-content-space-between is-align-items-center mb-4">
               <h1 class="has-text-grey-light has-text-weight-bold"> Usuários com acesso a plataforma</h1>
-              <b-button type="is-success">Novos Usuários</b-button>
+              <b-button type="is-success"> <router-link class="has-text-white" to="/cadastro"> Novos Usuários</router-link> </b-button>
             </div>
             
             <div class="container p-2 has-background-dark">
