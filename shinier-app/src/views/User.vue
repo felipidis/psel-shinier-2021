@@ -11,17 +11,18 @@
     <!-- Inicio SideBar e Container Usuários -->
 
     <div class="tile mx-4 mb-2">
+      
       <sidebar/>
 
       <div class="tile is-parent is-10 p-2 mb-1">
-        <article class="tile is-child has-background-dark">
+        <article class="tile is-child has-background-dark box">
           <div class="content is-flex is-flex-direction-column">
-            <div class="p-2 ml-3 ">
+            <div>
               <Header class="is-flex is-justify-content-space-between">
                 <div class="is-flex is-align-items-center">
-                  <img class="m-2" src="../assets/Filter.png" alt="">
+                  <img class="mx-2" src="../assets/Filter.png" alt="">
                   <span class="has-text-grey-light"> Filtros </span>
-                  <img class="m-3" src="../assets/Line.png" alt="">
+                  <img class="mx-3" src="../assets/Line.png" alt="">
                   <span class="has-text-grey-light"> ordenar por </span>
                 </div>
                 <div class="buttons has-addons">
@@ -36,6 +37,10 @@
                 <p class="p-2 has-text-grey-light">Usuários</p>
                 <hr class="hr has-background-grey">
                 </div>
+
+                <section class="pl-2">
+                  <user-card/>
+                </section>
               </main>
             </div>
           </div>
@@ -50,6 +55,7 @@
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar.vue'
 import FaixaCentral from '@/components/FaixaCentral.vue'
+import UserCard from '../components/UserCard.vue'
 
 export default {
   name: 'User',
@@ -59,7 +65,8 @@ export default {
   components:{
     Navbar,
     Sidebar,
-    FaixaCentral
+    FaixaCentral,
+    UserCard
   }
 }
 </script>
@@ -76,7 +83,7 @@ export default {
    height: 1px;
    border: none;
 }
-.box{
+.box span{
   width: 2.5rem;
   height: 2.5rem;
 }

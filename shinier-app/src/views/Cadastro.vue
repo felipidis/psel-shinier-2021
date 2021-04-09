@@ -15,14 +15,14 @@
       <sidebar/>
 
       <div class="tile is-parent is-10 p-2 mb-1">
-        <article class="tile is-child has-background-dark">
+        <article class="tile is-child has-background-dark box">
           <div class="content is-flex is-flex-direction-column">
-            <div class="p-2 ml-3">
+            <div>
               <Header class="is-flex is-justify-content-space-between">
                 <div class="is-flex is-align-items-center">
-                  <img class="m-2" src="../assets/Filter.png" alt="">
+                  <img class="mx-2" src="../assets/Filter.png" alt="">
                   <span class="has-text-grey-light"> Filtros </span>
-                  <img class="m-3" src="../assets/Line.png" alt="">
+                  <img class="mx-3" src="../assets/Line.png" alt="">
                   <span class="has-text-grey-light"> ordenar por </span>
                 </div>
                 <div class="buttons has-addons">
