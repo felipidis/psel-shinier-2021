@@ -1,31 +1,14 @@
 <template>
   <div class="hero has-background-black is-fullheight">
     <!-- Inicio da Navbar -->
-    <div class="hero-head is-flex is-align-items-center mx-4 mb-2">
-      <div class="tile is-parent is-2">
-        <img src="../assets/Logo_analytics.png" alt="Logo da Analytics" />
-      </div>
-      <div class="tile is-parent is-10 is-flex is-justify-content-space-between">
-        <b-field>
-          <b-input
-            placeholder="Buscar Funcionalidades"
-            type="search"
-            icon="magnify"
-            class="text-input"
-          >
-          </b-input>
-        </b-field>
-
-        <p class="has-text-white mr-6 mt-2">Super Admin</p>
-      </div>
-    </div>
+    <navbar/>
     <!-- Fim da Navbar -->
     
     <!-- Fim da Faixa -->
     <section class="mx-4">
       <div class="tile is-parent">
         <div class="tile is-child is-2"></div>
-        <div class=" tile is-child is-10 is-flex is-justify-content-space-between">
+        <div class=" tile is-child is-10 is-flex is-justify-content-space-between is-align-items-center">
           <h1 class="has-text-grey-light is-size-3 has-text-weight-bold"> Usuários com acesso a plataforma</h1>
           <b-button type="is-success"> <router-link class="has-text-white" to="/cadastro"> Novos Usuários</router-link> </b-button>
         </div>
@@ -63,10 +46,10 @@
         </article>
       </div>
 
-      <div class="tile is-parent is-10 p-0">
-        <article class="tile is-child">
+      <div class="tile is-parent is-10 p-0 mb-2">
+        <article class="tile is-child has-background-dark">
           <div class="content is-flex is-flex-direction-column">
-            <div class="p-4 ml-3 has-background-dark">
+            <div class="p-2 ml-3 ">
               <Header class="is-flex is-justify-content-space-between">
                 <div class="is-flex is-align-items-center">
                   <img class="m-2" src="../assets/Filter.png" alt="">
@@ -83,7 +66,7 @@
               
               <main>
                 <div class="is-flex is-align-items-center">
-                <p class="has-text-grey-light">Usuários</p>
+                <p class="p-2 has-text-grey-light">Usuários</p>
                 <hr class="hr has-background-grey">
                 </div>
               </main>
@@ -97,10 +80,15 @@
   </div>
 </template>
 <script>
+import Navbar from '@/components/Navbar'
+
 export default {
   name: 'User',
   props: {
     
+  },
+  components:{
+    Navbar
   }
 }
 </script>
@@ -116,5 +104,9 @@ export default {
    margin-top: 12px;
    height: 1px;
    border: none;
+}
+.box{
+  width: 2.5rem;
+  height: 2.5rem;
 }
 </style>
