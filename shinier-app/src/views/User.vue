@@ -5,15 +5,7 @@
     <!-- Fim da Navbar -->
     
     <!-- Fim da Faixa -->
-    <section class="mx-4">
-      <div class="tile is-parent">
-        <div class="tile is-child is-2"></div>
-        <div class=" tile is-child is-10 is-flex is-justify-content-space-between is-align-items-center">
-          <h1 class="has-text-grey-light is-size-3 has-text-weight-bold"> Usuários com acesso a plataforma</h1>
-          <b-button type="is-success"> <router-link class="has-text-white" to="/cadastro"> Novos Usuários</router-link> </b-button>
-        </div>
-      </div>
-    </section>
+    <faixa-central mainText="Usuários com acesso a plataforma" :condition="true" buttonText="Novo Usuário" />
     <!-- Fim da Faixa -->
     
     <!-- Inicio SideBar e Container Usuários -->
@@ -21,7 +13,7 @@
     <div class="tile mx-4 mb-2">
       <sidebar/>
 
-      <div class="tile is-parent is-10 p-0 mb-2">
+      <div class="tile is-parent is-10 p-2 mb-1">
         <article class="tile is-child has-background-dark">
           <div class="content is-flex is-flex-direction-column">
             <div class="p-2 ml-3 ">
@@ -56,7 +48,8 @@
 </template>
 <script>
 import Navbar from '@/components/Navbar'
-import Sidebar from '../components/Sidebar.vue'
+import Sidebar from '@/components/Sidebar.vue'
+import FaixaCentral from '@/components/FaixaCentral.vue'
 
 export default {
   name: 'User',
@@ -65,7 +58,8 @@ export default {
   },
   components:{
     Navbar,
-    Sidebar
+    Sidebar,
+    FaixaCentral
   }
 }
 </script>
