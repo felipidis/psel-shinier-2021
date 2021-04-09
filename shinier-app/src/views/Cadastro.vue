@@ -19,32 +19,8 @@
     <!-- Inicio SideBar e Cadastro -->
 
     <div class="tile mx-4 mb-2">
-      <div class="tile  mb-2 is-parent is-2">
-        <article class="tile is-child">
-          <div class="content is-flex is-flex-direction-column">
-            <div class=" is-flex is-align-items-center">
-              <img src="../assets/sidemenu/Dash.png" alt="">
-              <span class="m-3 ml-4 has-text-grey-light">Dashboard</span>
-            </div>
-            <div class=" is-flex is-align-items-center">
-              <img src="../assets/sidemenu/Group.png" alt="">
-              <span class="m-2 has-text-grey-light">Grupos</span>
-            </div>
-            <div class=" is-flex is-align-items-center">
-              <img src="../assets/sidemenu/User.png" alt="">
-              <span class="m-3 ml-5 has-text-grey-light">Usuários</span>
-            </div>
-            <div class=" is-flex is-align-items-center">
-              <img src="../assets/sidemenu/System.png" alt="">
-              <span class="m-3 ml-5 has-text-grey-light">Sistema</span>
-            </div>
-            <div class=" is-flex is-align-items-center">
-              <img src="../assets/sidemenu/Categorie.png" alt="">
-              <span class="m-3 ml-5 has-text-grey-light">Categorias</span>
-            </div>
-          </div>
-        </article>
-      </div>
+      
+      <sidebar/>
 
       <div class="tile is-parent is-10 p-0 mb-2">
         <article class="tile is-child has-background-dark">
@@ -81,12 +57,13 @@
 </template>
 <script>
 import Navbar from '../components/Navbar.vue'
+import Sidebar from '../components/Sidebar.vue'
 export default {
   name: '',
   props: {
     
   },
-  components: { Navbar },
+  components: { Navbar, Sidebar },
 }
 </script>
 
