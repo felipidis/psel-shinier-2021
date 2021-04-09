@@ -18,12 +18,12 @@
         <article class="tile is-child has-background-dark box">
           <div class="content is-flex is-flex-direction-column">
             <div>
-              <Header class="is-flex is-justify-content-space-between">
-                <div class="is-flex is-align-items-center">
+              <Header class="is-flex is-justify-content-space-between ">
+                <div class="is-flex is-align-items-center is-flex-wrap-nowrap">
                   <img class="mx-2" src="../assets/Filter.png" alt="">
-                  <span class="has-text-grey-light"> Filtros </span>
+                  <span class="pt-2 has-text-grey-light"> Filtros </span>
                   <img class="mx-3" src="../assets/Line.png" alt="">
-                  <span class="has-text-grey-light"> ordenar por </span>
+                  <p class="has-text-grey-light"> ordenar por </p>
                 </div>
                 <div class="buttons has-addons">
                   <button class="button is-black is-selected">Yes</button>
@@ -39,7 +39,18 @@
                 </div>
 
                 <section class="pl-2">
-                  <user-card/>
+                  <user-card name="Eva Graves" 
+                  email="eva.graves@gmail.com" 
+                  phone="(16) 98135-4517" 
+                  cpf="379.584.078-13" 
+                  text="Sistemas Ativos"
+                  />
+                  <user-card name="Firmware" 
+                  email="firmware@acquanativa.com.br" 
+                  phone="(99)99999-9999" 
+                  cpf="387.279.078-13" 
+                  text="hardware"
+                  />
                 </section>
               </main>
             </div>
@@ -67,7 +78,7 @@ export default {
     Sidebar,
     FaixaCentral,
     UserCard
-  }
+  },
 }
 </script>
 
