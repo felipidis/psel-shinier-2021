@@ -173,4 +173,8 @@ export default {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.size {
+  width: 150.47px;
+}
 </style>

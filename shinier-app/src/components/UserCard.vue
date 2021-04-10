@@ -3,7 +3,7 @@
     <div class="is-flex is-justify-content-space-between is-align-items-center">
       <div class="is-flex is-align-items-center">
         <img src="@/assets/Eva.png" alt="User photo" />
-        <div>
+        <div class="size">
           <p class="ml-2 my-0 has-text-white is-size-7">{{ name }}</p>
           <p class="ml-2 my-0 has-text-white is-size-7">{{ email }}</p>
         </div>
@@ -18,13 +18,14 @@
       <div>
         <div>
           <p class="ml-2 my-0 mt-1 has-text-white is-size-7">{{ text }}</p>
-          <div class="ml-2">
+          <div v-if="showpill" class="ml-2">
             <span> <img src="@/assets/PillActive.png" alt="" /></span>
             <span> <img src="@/assets/PillActive.png" alt="" /></span>
             <span> <img src="@/assets/PillActive.png" alt="" /></span>
             <span> <img src="@/assets/PillActive.png" alt="" /></span>
             <span> <img src="@/assets/PillDisable.png" alt="" /></span>
           </div>
+          <p v-else class="ml-2 my-0 mt-1 has-text-white is-size-7">Firmware</p>
         </div>
       </div>
 
@@ -48,6 +49,7 @@ export default {
     email: String,
     phone: String,
     cpf: String,
+    showpill: Boolean,
   },
 };
 </script>
