@@ -25,7 +25,9 @@
             <span> <img src="@/assets/PillActive.png" alt="" /></span>
             <span> <img src="@/assets/PillDisable.png" alt="" /></span>
           </div>
-          <p v-else class="ml-2 my-0 mt-1 has-text-white is-size-7">Firmware</p>
+          <p v-else class="ml-2 my-0 mt-1 has-text-white is-size-7">
+            {{ type }}
+          </p>
         </div>
       </div>
 
@@ -50,6 +52,7 @@ export default {
     phone: String,
     cpf: String,
     showpill: Boolean,
+    type: String,
   },
 };
 </script>

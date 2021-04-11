@@ -16,147 +16,7 @@
 
     <div class="tile mx-4 mb-2">
       <sidebar />
-
-      <div class="tile is-parent is-10 p-2 mb-1">
-        <article class="tile is-child has-background-dark box">
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Nome</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="text"
-                      style="background-color: #131414"
-                      placeholder="Nome Completo"
-                      required
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Email</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="email"
-                      style="background-color: #131414"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Senha</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="password"
-                      style="background-color: #131414"
-                      placeholder="*********"
-                      required
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Repetir Senha</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="password"
-                      style="background-color: #131414"
-                      placeholder="*********"
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">CPF</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="text"
-                      style="background-color: #131414"
-                      placeholder="999.999.999-99"
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Telefone</label>
-                  <div class="control">
-                    <input
-                      class="input"
-                      type="tel"
-                      style="background-color: #131414"
-                      placeholder="(DD) 99999-9999"
-                      required
-                    />
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <article class="tile is-child">
-                <div class="field">
-                  <label class="label has-text-grey-light">Grupo</label>
-                  <b-field>
-                    <b-select
-                      placeholder="Super Admin - cargo -  Pessoas responsáveis com todas as funcionalidades"
-                      expanded
-                    >
-                      <option value="Super">Super Admin</option>
-                      <option value="Admin">Admin</option>
-                    </b-select>
-                  </b-field>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div>
-            <p class="has-text-grey-light">Grupos Extras</p>
-            <div class="tile is-ancestor mt-2">
-              <div class="tile is-parent">
-                <article class="tile is-child is-2">
-                  <div class="field">
-                    <label class="label has-text-grey-light">Campo 1</label>
-                    <div class="control">
-                      <input
-                        class="input"
-                        type="password"
-                        style="background-color: #131414"
-                        placeholder="*********"
-                      />
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
+      <register-main />
     </div>
     <!-- Fim SideBar e Container Usuários -->
   </div>
@@ -165,6 +25,7 @@
 import Navbar from "@/components/Navbar.vue";
 import Sidebar from "@/components/Sidebar.vue";
 import FaixaCentral from "@/components/FaixaCentral.vue";
+import RegisterMain from "../components/RegisterMain.vue";
 
 export default {
   name: "",
@@ -173,6 +34,7 @@ export default {
     Navbar,
     Sidebar,
     FaixaCentral,
+    RegisterMain,
   },
 };
 </script>
