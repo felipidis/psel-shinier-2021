@@ -28,7 +28,8 @@
                     <input
                       class="input"
                       type="text"
-                      placeholder="Text input"
+                      style="background-color: #131414"
+                      placeholder="Nome Completo"
                       required
                     />
                   </div>
@@ -43,6 +44,7 @@
                     <input
                       class="input"
                       type="email"
+                      style="background-color: #131414"
                       placeholder="Email"
                       required
                     />
@@ -60,6 +62,7 @@
                     <input
                       class="input"
                       type="password"
+                      style="background-color: #131414"
                       placeholder="*********"
                       required
                     />
@@ -75,6 +78,7 @@
                     <input
                       class="input"
                       type="password"
+                      style="background-color: #131414"
                       placeholder="*********"
                     />
                   </div>
@@ -89,6 +93,7 @@
                     <input
                       class="input"
                       type="text"
+                      style="background-color: #131414"
                       placeholder="999.999.999-99"
                     />
                   </div>
@@ -103,6 +108,7 @@
                     <input
                       class="input"
                       type="tel"
+                      style="background-color: #131414"
                       placeholder="(DD) 99999-9999"
                       required
                     />
@@ -140,6 +146,7 @@
                       <input
                         class="input"
                         type="password"
+                        style="background-color: #131414"
                         placeholder="*********"
                       />
                     </div>
